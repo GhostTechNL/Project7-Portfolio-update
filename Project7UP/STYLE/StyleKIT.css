@@ -1,0 +1,633 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+   Reset stylesheet
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*====================== My Code ======================*/
+body{
+	font-family: sans-serif;
+}
+.Brothers{
+	display: flex;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+nav,main{
+    min-height: 900px;	
+	float: left;
+}
+
+/* ---- Side Menu ----*/
+nav{
+	flex: 2;
+	width: 20%;
+	background-color: #222f3e;
+}
+nav figure{
+	width: fit-content;
+	margin: 10px auto;
+}
+nav figure img{
+	border-radius: 50%;
+	background-color: white;
+	width: 160px;
+	height: 160px;
+}
+nav ul{
+	width: 70%;
+	margin: 10px auto;
+}
+nav ul li{
+	padding-bottom: 10px;
+}
+nav ul li i{
+	margin-right: 12px;
+}
+nav ul li a{
+	display: block;
+	border: 1px solid black;
+	border-radius: 60px;
+	background-color: white;
+	font-size: 24px;
+	color: black;
+	text-decoration: none;	
+	padding: 8px 14px;
+	font-weight: bold;
+	width: 90%;
+}
+nav ul li a:hover{
+	background-color: #ff6b6b;
+	color: white;
+}
+nav .Social {
+	width: fit-content;
+	margin: 50px auto;
+}
+nav .Social a{
+	float: left;
+	display: block;
+	color: black;
+	text-decoration: none;
+	font-size: 40px;
+	text-align: center;
+
+	border-radius: 50%;
+	background-color: white;
+
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	margin: 0 2px;
+}
+nav .Social a:hover{
+	background-color: #ff6b6b;
+	color: white;
+}
+/*---- Content ----*/
+main{
+	flex: 8;
+	width: 80%;
+	background-color: #576574;
+}
+/*---- Footer ----*/
+footer{
+	position: relative;
+	width: 100%;
+	height: 90px;
+	background-color: #ee5253;
+	color: white;
+}
+footer h1{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 65px;
+}
+
+/*========== | Index | ==========*/
+
+.Index{
+	width: 100%;
+}
+
+.IN1{
+	width: 100%;
+	height: 100vh;
+	background-image: url('../IMG/backgroundimg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+.Welkome-sign{
+	width: fit-content;
+	text-align: center;
+	margin: 0 auto;
+	padding: 230px 0;
+	font-weight: bold;
+}
+.Welkome-sign h2{
+	font-size: 50px;
+	border-bottom: 2px solid black;
+}
+.Welkome-sign h3{
+	font-size: 40px;
+}
+.IN2{
+	width: 100%;
+	height: 200px;
+	background-color: #2C0A2D;
+}
+
+/*========== | Over-mij | ==========*/
+
+.Overmij{
+	width: 90%;
+	margin: 50px auto;
+	color: white;
+}
+
+.Overmij h2{
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.Overmij img{
+	border-radius: 5px;
+	width: 90%;
+}
+.M1{
+	padding: 15px 0px;
+	width: 70%;	
+}
+.M1 ul{
+	padding-left: 20px;
+}
+.M1 ul li{
+	list-style: circle;
+}
+.M2{
+	float: left;
+}
+.IM1{
+	width: 30%;
+}
+
+/*========== | Skills | ==========*/
+.Skill{
+	width: 90%;
+	margin: 60px auto;
+}
+.SkillMeter{
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+	height: auto;
+}
+.Skill h1{
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+.SkillMeter h3{
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+}
+.SkillMeter ul{
+	margin-top: 10px;
+	width: 100%;
+}
+.procent span{
+	float: right;
+	padding: 7px 5px; 
+}
+.SkillMeter ul li{
+	display: block;
+	border: 5px solid white;
+	background-color: white;
+	width: calc(100% - 10px);
+	border-radius: 10px;
+	margin: 0 0 20px 0; 
+
+}
+.SkillMeter ul li .procent-bar{
+	width: 100%;
+	height: 30px;
+	background-color: #222f3e;
+	border-radius: 10px;
+}
+.SkillMeter ul li .procent-bar .procent{
+	height: 30px;
+	background-color: #ee5253;
+	border-radius: 10px 0 0 10px;
+}
+/* | Procent skill | */
+#HTML{
+    width: 80%;
+}
+#WEB{
+	width: 50%;
+}
+#JS{
+	width: 50%;
+}
+#PHP{
+	width: 60%;
+}
+#SQL{
+	width: 50%;
+}
+#CSHARP{
+	width: 30%;
+}
+#JAVA{
+	width: 20%;
+}
+/*--------- | Skills Projecten | ---------*/
+.Projecten{
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+	padding-bottom: 100px;
+}
+.Projecten ul{
+	margin-top: 10px;
+	width: 100%;
+}
+.Projecten ul li a{
+	margin: 10px 12px;
+	display: block;
+	float: left;
+	border: 5px solid white;
+	background-color: white;
+	width: 30%;
+	border-radius: 10px;
+	color: black;
+	text-decoration: none;
+	height: calc(100% + 90px);
+}
+.Projecten ul li a h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+.Projecten ul li a img{
+	width: 100%;
+	height: 250px;
+}
+/*========== | ProjectV-iews | ==========*/
+.ProjectV{
+	width: 90%;
+	margin: 60px auto;
+}
+.Projectdisplay div h1{
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+.Projectdisplay div p{
+	color: white;
+	font-size: 20px;
+	padding: 0 5px;
+}
+.Projectdisplay div{
+	display: block;
+	float: left;
+	width: 50%;
+}
+.Projectdisplay div img{
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
+
+/*========== | Contact | ==========*/
+.Contact{
+	min-height: 900px;
+	width: 100%;
+}
+.Contact form{
+	width: 60%;
+	margin: 60px auto;
+}
+.Contact h1{
+	padding-top: 50px;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+.Contact form div span{
+	padding-left: 2px;
+	color: red;
+}
+.Contact form div label{
+	color: white;
+	font-weight: bold;
+}
+.Contact form div{
+	padding: 10px 0;
+}
+.Contact form div input, .Contact form div textarea{
+	width: calc(100% - 10px);
+	display: block;
+	border-radius: 20px;
+	border: none;
+	box-shadow: none;
+	font-size: 25px;
+	background-color: #c8d6e5;
+	margin-top: 2px;
+}
+.Contact form div input{
+	padding: 5px 10px;
+}
+.Contact form div textarea{
+	padding: 5px 10px;
+	resize: none;
+}
+.Contact form input[type = "submit"]{
+	border-radius: 10px;
+	border: none;
+	box-shadow: none;
+	font-size: 25px;
+	background-color: #ee5253;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+	cursor: pointer; 
+}
+
+/*========== | Inloggen & Registeren | ==========*/
+
+.Inloggen{
+	min-height: 900px;
+	width: 100%;
+}
+.Inloggen form{
+	width: 30%;
+	margin: 50px auto;
+}
+.Inloggen h1{
+	padding-top: 120px;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+.Inloggen form div{
+	padding: 10px 0;
+}
+.Inloggen form div input{
+	width: calc(100% - 10px);
+	display: block;
+	border-radius: 20px;
+	border: none;
+	box-shadow: none;
+	font-size: 25px;
+	background-color: #c8d6e5;
+	margin-top: 2px;
+}
+.Inloggen form div input{
+	padding: 5px 10px;
+}
+.Inloggen form input[type = "submit"]{
+	width: calc(100% + 10px);
+	border-radius: 20px;
+	border: none;
+	box-shadow: none;
+	font-size: 25px;
+	background-color: #ee5253;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+.Inloggen div a{
+	color: white;
+	font-weight: bold;
+}
+/*========== | Panel | ==========*/
+/*------ | ADNav | ------*/
+.PNav{
+	width: 100%;
+	min-height: 50px;
+	background-color: #ee5253;
+}
+.PNav ul{
+	width: calc(90% + 15px);
+	margin: 0 auto;
+}
+.PNav ul li{
+	margin: 15px 10px;
+	display: block;
+	float: left;
+}
+.PNav ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.PNav ul li a:hover{
+	color: black;
+}
+/*------ | Panel | ------*/
+.WorkArea{
+	display: flex;
+	width: 90%;
+	overflow: hidden;
+	height: auto;
+	margin: 30px auto;
+}
+.ProjectList, .Panel{
+	float: left;
+}
+.ProjectList{
+	flex: 2.5;
+	width: 25%;
+	background-color: #8395a7;
+	border-radius: 10px;
+	padding: 5px;
+}
+.ProjectList div{
+	width: 100%;
+	background-color: #ee5253;
+	text-align: center;
+	border-radius: 50px;
+	padding: 5px 0;
+}
+.ProjectList div a{
+	text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.ProjectList ul{
+	width: 100%;
+	margin-top: 10px;
+}
+.ProjectList ul li{
+	width: 100%;
+	margin-top: 15px;
+}
+.ProjectList ul li a{
+	display: block;
+	color: black;
+	text-decoration: none;
+	min-height: 40px;
+	overflow: hidden;
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px;
+}
+.ProjectList ul li a img{
+	width: 50%;
+	height: 100px;
+}
+.ProjectList ul li a h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+.Delete{
+	width: fit-content;
+}
+.Panel{
+	flex: 8;
+	width: 80%;
+	height: auto;
+	overflow: hidden;
+}
+.Panel form{
+	width: 75%;
+	margin: 0 auto;
+}
+.Panel form div img{
+	height: 250px;
+}
+.Panel form div label{
+	display: block;
+	margin-bottom: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.Panel form div{
+	margin: 10px 0;
+}
+.Panel form div input, .Panel form div textarea{
+	display: block;
+	font-size: 20px;
+	border: none;
+	min-width: 50%;
+	border-radius: 25px;
+	padding: 5px 10px;
+}
+.Panel form div textarea{
+	resize: none;
+}
+.Panel form input[type = "submit"] , .Panel form div input[type = "file"]{
+	border: none;
+	background-color: #ee5253;
+	border-radius: 50px;
+	padding: 5px 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+/*========== | Overig | ==========*/
+
+.Sbtn{
+	cursor: pointer;
+}
+
+.Error{
+	width: fit-content;
+	border: 1px dashed black;
+	background-color: #ee5253;
+	padding: 5px;
+	margin: 10px auto;
+}
+.Error h2{
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+
+.Error2{
+	width: 90%;
+	margin: 50px auto;
+}
+.Error2 h1{
+	width: 90%;
+	margin: 50px auto;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+}
+
+.message{
+	width: fit-content;
+	border: 1px dashed #10ac84;
+	background-color: #1dd1a1;
+	padding: 5px;
+	margin: 10px auto;
+}
+.message h2{
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 4px;
+
+}
