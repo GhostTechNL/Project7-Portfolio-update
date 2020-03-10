@@ -70,7 +70,7 @@ echo mysqli_error($conn) ."<br>";
 
 $IN_UserEmail = "Admin@klantservice.nl";
 $IN_UserName = "Admin";
-$IN_UserPassword = "Welkom01";
+$IN_UserPassword = "Wachtword";
 
 $IN_Type = "OW";
 
